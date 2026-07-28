@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net9.0</TargetFramework>
+        <AssemblyName>Orpheon Bot Project</AssemblyName>
+        <Description>Orpheon, the Watcher, Discord Bot.</Description>
+        <Version>1.0.0</Version>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <LangVersion>Latest</LangVersion>
+        <RootNamespace>Orpheon_Bot</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    </PropertyGroup>
+        
+    <ItemGroup>
+        <PackageReference Include="Cecil.ANSI_Utils" Version="1.0.1" />
+        <PackageReference Include="DSharpPlus" Version="5.0.0-nightly-02566" />
+        <PackageReference Include="DSharpPlus.CommandsNext" Version="5.0.0-nightly-02566" />
+        <PackageReference Include="SixLabors.ImageSharp" Version="3.1.12" />
+    </ItemGroup>
+    
+    <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
+        <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <ProjectReference Include="..\Bridge Project\Bridge Project.csproj" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <Folder Include="Util\Discord\" />
+      <Folder Include="Util\Images\" />
+      <Folder Include="Util\Logging\" />
+      <Folder Include="Util\Receiver\" />
+      <Folder Include="Util\UI\" />
+      <Folder Include="Util\Voting\" />
+    </ItemGroup>
+    
+    <Target Name="PostBuild" AfterTargets="Build">
+        <Copy SourceFiles="$(TargetPath)" DestinationFolder="C:\Program Files (x86)\Steam\steamapps\common\Pony Island\Orpheon" SkipUnchangedFiles="false" />
+    </Target>
+</Project>

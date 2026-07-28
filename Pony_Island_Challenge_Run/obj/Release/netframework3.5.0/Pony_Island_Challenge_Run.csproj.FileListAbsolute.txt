@@ -1,0 +1,26 @@
+C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Pony_Island_Challenge_Run\bin\Release\netframework3.5.0\Pony Island Challenge Runs.dll
+C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Pony_Island_Challenge_Run\bin\Release\netframework3.5.0\Pony Island Challenge Runs.pdb
+C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Pony_Island_Challenge_Run\bin\Release\netframework3.5.0\AssetRipper.Primitives.dll
+C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Pony_Island_Challenge_Run\bin\Release\netframework3.5.0\BepInEx.Core.dll
+C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Pony_Island_Challenge_Run\bin\Release\netframework3.5.0\BepInEx.Preloader.Core.dll
+C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Pony_Island_Challenge_Run\bin\Release\netframework3.5.0\BepInEx.Unity.Common.dll
+C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Pony_Island_Challenge_Run\bin\Release\netframework3.5.0\BepInEx.Unity.Mono.dll
+C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Pony_Island_Challenge_Run\bin\Release\netframework3.5.0\BepInEx.Unity.Mono.Preloader.dll
+C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Pony_Island_Challenge_Run\bin\Release\netframework3.5.0\0Harmony.dll
+C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Pony_Island_Challenge_Run\bin\Release\netframework3.5.0\Mono.Cecil.Mdb.dll
+C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Pony_Island_Challenge_Run\bin\Release\netframework3.5.0\Mono.Cecil.Pdb.dll
+C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Pony_Island_Challenge_Run\bin\Release\netframework3.5.0\Mono.Cecil.Rocks.dll
+C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Pony_Island_Challenge_Run\bin\Release\netframework3.5.0\Mono.Cecil.dll
+C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Pony_Island_Challenge_Run\bin\Release\netframework3.5.0\MonoMod.RuntimeDetour.dll
+C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Pony_Island_Challenge_Run\bin\Release\netframework3.5.0\MonoMod.Utils.dll
+C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Pony_Island_Challenge_Run\bin\Release\netframework3.5.0\SemanticVersioning.dll
+C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Pony_Island_Challenge_Run\bin\Release\netframework3.5.0\Bridge Project.dll
+C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Pony_Island_Challenge_Run\bin\Release\netframework3.5.0\Bridge Project.pdb
+C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Pony_Island_Challenge_Run\obj\Release\netframework3.5.0\Pony_Island_Challenge_Run.csproj.AssemblyReference.cache
+C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Pony_Island_Challenge_Run\obj\Release\netframework3.5.0\Pony_Island_Challenge_Run.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Pony_Island_Challenge_Run\obj\Release\netframework3.5.0\Pony_Island_Challenge_Run.AssemblyInfoInputs.cache
+C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Pony_Island_Challenge_Run\obj\Release\netframework3.5.0\Pony_Island_Challenge_Run.AssemblyInfo.cs
+C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Pony_Island_Challenge_Run\obj\Release\netframework3.5.0\Pony_Island_Challenge_Run.csproj.CoreCompileInputs.cache
+C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Pony_Island_Challenge_Run\obj\Release\netframework3.5.0\Pony_Isl.09702781.Up2Date
+C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Pony_Island_Challenge_Run\obj\Release\netframework3.5.0\Pony Island Challenge Runs.dll
+C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Pony_Island_Challenge_Run\obj\Release\netframework3.5.0\Pony Island Challenge Runs.pdb

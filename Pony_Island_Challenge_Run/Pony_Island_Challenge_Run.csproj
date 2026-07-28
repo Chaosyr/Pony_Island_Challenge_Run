@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netframework3.5.0</TargetFramework>
+        <AssemblyName>Pony Island Challenge Runs</AssemblyName>
+        <Description>A Challenge Mod for Pony Island</Description>
+        <Version>1.0.0</Version>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <LangVersion>Latest</LangVersion>
+        <RootNamespace>PonyIslandChallengeRuns</RootNamespace>
+        <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="BepInEx.Analyzers" Version="1.0.8">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="BepInEx.Unity.Mono" Version="6.0.0-be.752">
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="BepInEx.Unity.Mono.Preloader" Version="6.0.0-be.752">
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="Discord.Net" Version="3.18.0" />
+        <PackageReference Include="UnityEngine.Modules" Version="2019.4.24" IncludeAssets="compile">
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
+        <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" Version="0.4.0">
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <Reference Include="Assembly-CSharp">
+            <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Pony Island\PonyIsland_Data\Managed\Assembly-CSharp.dll</HintPath>
+            <Publicize>true</Publicize>
+            <Private>false</Private>
+        </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Patching\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Bridge Project\Bridge Project.csproj" />
+    </ItemGroup>
+
+    <Target Name="PostBuild" AfterTargets="Build">
+        <Copy SourceFiles="$(TargetPath)" DestinationFolder="C:\Program Files (x86)\Steam\steamapps\common\Pony Island\BepInEx\plugins\Challenges" SkipUnchangedFiles="false" />
+    </Target>
+</Project>

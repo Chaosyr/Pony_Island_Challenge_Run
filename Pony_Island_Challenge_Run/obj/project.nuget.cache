@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "dgSpecHash": "2UhABjRwhd8=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\Pony_Island_Challenge_Run\\Pony_Island_Challenge_Run.csproj",
+  "expectedPackageFiles": [
+    "D:\\Nuget\\assetripper.primitives\\3.1.3\\assetripper.primitives.3.1.3.nupkg.sha512",
+    "D:\\Nuget\\bepinex.analyzers\\1.0.8\\bepinex.analyzers.1.0.8.nupkg.sha512",
+    "D:\\Nuget\\bepinex.assemblypublicizer.msbuild\\0.4.0\\bepinex.assemblypublicizer.msbuild.0.4.0.nupkg.sha512",
+    "D:\\Nuget\\bepinex.core\\6.0.0-be.752\\bepinex.core.6.0.0-be.752.nupkg.sha512",
+    "D:\\Nuget\\bepinex.preloader.core\\6.0.0-be.752\\bepinex.preloader.core.6.0.0-be.752.nupkg.sha512",
+    "D:\\Nuget\\bepinex.unity.common\\6.0.0-be.752\\bepinex.unity.common.6.0.0-be.752.nupkg.sha512",
+    "D:\\Nuget\\bepinex.unity.mono\\6.0.0-be.752\\bepinex.unity.mono.6.0.0-be.752.nupkg.sha512",
+    "D:\\Nuget\\bepinex.unity.mono.preloader\\6.0.0-be.752\\bepinex.unity.mono.preloader.6.0.0-be.752.nupkg.sha512",
+    "D:\\Nuget\\discord.net\\3.18.0\\discord.net.3.18.0.nupkg.sha512",
+    "D:\\Nuget\\harmonyx\\2.10.2\\harmonyx.2.10.2.nupkg.sha512",
+    "D:\\Nuget\\mono.cecil\\0.10.4\\mono.cecil.0.10.4.nupkg.sha512",
+    "D:\\Nuget\\monomod.runtimedetour\\22.7.31.1\\monomod.runtimedetour.22.7.31.1.nupkg.sha512",
+    "D:\\Nuget\\monomod.utils\\22.7.31.1\\monomod.utils.22.7.31.1.nupkg.sha512",
+    "D:\\Nuget\\semanticversioning\\2.0.2\\semanticversioning.2.0.2.nupkg.sha512",
+    "D:\\Nuget\\unity.inputsystem\\1.5.0\\unity.inputsystem.1.5.0.nupkg.sha512",
+    "D:\\Nuget\\unityengine\\5.6.1\\unityengine.5.6.1.nupkg.sha512",
+    "D:\\Nuget\\unityengine.modules\\2019.4.24\\unityengine.modules.2019.4.24.nupkg.sha512"
+  ],
+  "logs": []
+}

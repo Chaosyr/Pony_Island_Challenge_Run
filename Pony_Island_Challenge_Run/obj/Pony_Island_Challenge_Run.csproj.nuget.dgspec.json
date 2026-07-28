@@ -1,0 +1,138 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\Pony_Island_Challenge_Run\\Pony_Island_Challenge_Run.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\Bridge Project\\Bridge Project.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\Bridge Project\\Bridge Project.csproj",
+        "projectName": "Bridge Project",
+        "projectPath": "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\Bridge Project\\Bridge Project.csproj",
+        "packagesPath": "D:\\Nuget",
+        "outputPath": "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\Bridge Project\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\NuGet.Config",
+          "C:\\Users\\Thinc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netframework3.5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.bepinex.dev/v3/index.json": {},
+          "https://nuget.windows10ce.com/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net35": {
+            "targetAlias": "netframework3.5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net35": {
+          "targetAlias": "netframework3.5.0",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\Pony_Island_Challenge_Run\\Pony_Island_Challenge_Run.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\Pony_Island_Challenge_Run\\Pony_Island_Challenge_Run.csproj",
+        "projectName": "Pony Island Challenge Runs",
+        "projectPath": "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\Pony_Island_Challenge_Run\\Pony_Island_Challenge_Run.csproj",
+        "packagesPath": "D:\\Nuget",
+        "outputPath": "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\Pony_Island_Challenge_Run\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\NuGet.Config",
+          "C:\\Users\\Thinc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netframework3.5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.bepinex.dev/v3/index.json": {},
+          "https://nuget.windows10ce.com/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net35": {
+            "targetAlias": "netframework3.5.0",
+            "projectReferences": {
+              "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\Bridge Project\\Bridge Project.csproj": {
+                "projectPath": "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\Bridge Project\\Bridge Project.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net35": {
+          "targetAlias": "netframework3.5.0",
+          "dependencies": {
+            "BepInEx.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.8, )"
+            },
+            "BepInEx.AssemblyPublicizer.MSBuild": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[0.4.0, )"
+            },
+            "BepInEx.Unity.Mono": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0-be.752, )"
+            },
+            "BepInEx.Unity.Mono.Preloader": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0-be.752, )"
+            },
+            "Discord.Net": {
+              "target": "Package",
+              "version": "[3.18.0, )"
+            },
+            "UnityEngine.Modules": {
+              "include": "Compile",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2019.4.24, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

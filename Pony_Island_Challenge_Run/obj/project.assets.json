@@ -1,0 +1,875 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v3.5": {
+      "AssetRipper.Primitives/3.1.3": {
+        "type": "package",
+        "compile": {
+          "lib/net35/AssetRipper.Primitives.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net35/AssetRipper.Primitives.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "BepInEx.Analyzers/1.0.8": {
+        "type": "package"
+      },
+      "BepInEx.AssemblyPublicizer.MSBuild/0.4.0": {
+        "type": "package",
+        "contentFiles": {
+          "contentFiles/cs/any/IgnoresAccessChecksToAttribute.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          }
+        },
+        "build": {
+          "build/BepInEx.AssemblyPublicizer.MSBuild.props": {}
+        }
+      },
+      "BepInEx.Core/6.0.0-be.752": {
+        "type": "package",
+        "dependencies": {
+          "HarmonyX": "2.10.2",
+          "MonoMod.Utils": "22.7.31.1",
+          "SemanticVersioning": "2.0.2"
+        },
+        "compile": {
+          "lib/net35/BepInEx.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net35/BepInEx.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "BepInEx.Preloader.Core/6.0.0-be.752": {
+        "type": "package",
+        "dependencies": {
+          "BepInEx.Core": "6.0.0-be.752",
+          "HarmonyX": "2.10.2",
+          "MonoMod.RuntimeDetour": "22.7.31.1",
+          "MonoMod.Utils": "22.7.31.1"
+        },
+        "compile": {
+          "lib/net35/BepInEx.Preloader.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net35/BepInEx.Preloader.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "BepInEx.Unity.Common/6.0.0-be.752": {
+        "type": "package",
+        "dependencies": {
+          "AssetRipper.Primitives": "3.1.3",
+          "MonoMod.Utils": "22.7.31.1"
+        },
+        "compile": {
+          "lib/net35/BepInEx.Unity.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net35/BepInEx.Unity.Common.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "BepInEx.Unity.Mono/6.0.0-be.752": {
+        "type": "package",
+        "dependencies": {
+          "BepInEx.Core": "6.0.0-be.752",
+          "HarmonyX": "2.10.2",
+          "Unity.InputSystem": "1.5.0",
+          "UnityEngine": "5.6.1"
+        },
+        "compile": {
+          "lib/net35/BepInEx.Unity.Mono.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net35/BepInEx.Unity.Mono.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "BepInEx.Unity.Mono.Preloader/6.0.0-be.752": {
+        "type": "package",
+        "dependencies": {
+          "BepInEx.Core": "6.0.0-be.752",
+          "BepInEx.Preloader.Core": "6.0.0-be.752",
+          "BepInEx.Unity.Common": "6.0.0-be.752",
+          "HarmonyX": "2.10.2"
+        },
+        "compile": {
+          "lib/net35/BepInEx.Unity.Mono.Preloader.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net35/BepInEx.Unity.Mono.Preloader.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Discord.Net/3.18.0": {
+        "type": "package"
+      },
+      "HarmonyX/2.10.2": {
+        "type": "package",
+        "dependencies": {
+          "MonoMod.RuntimeDetour": "22.3.23.4"
+        },
+        "compile": {
+          "lib/net35/0Harmony.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net35/0Harmony.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Mono.Cecil/0.10.4": {
+        "type": "package",
+        "compile": {
+          "lib/net35/Mono.Cecil.Mdb.dll": {},
+          "lib/net35/Mono.Cecil.Pdb.dll": {},
+          "lib/net35/Mono.Cecil.Rocks.dll": {},
+          "lib/net35/Mono.Cecil.dll": {}
+        },
+        "runtime": {
+          "lib/net35/Mono.Cecil.Mdb.dll": {},
+          "lib/net35/Mono.Cecil.Pdb.dll": {},
+          "lib/net35/Mono.Cecil.Rocks.dll": {},
+          "lib/net35/Mono.Cecil.dll": {}
+        }
+      },
+      "MonoMod.RuntimeDetour/22.7.31.1": {
+        "type": "package",
+        "dependencies": {
+          "Mono.Cecil": "0.10.4",
+          "MonoMod.Utils": "22.7.31.1"
+        },
+        "frameworkAssemblies": [
+          "System"
+        ],
+        "compile": {
+          "lib/net35/MonoMod.RuntimeDetour.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net35/MonoMod.RuntimeDetour.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MonoMod.Utils/22.7.31.1": {
+        "type": "package",
+        "dependencies": {
+          "Mono.Cecil": "0.10.4"
+        },
+        "frameworkAssemblies": [
+          "System"
+        ],
+        "compile": {
+          "lib/net35/MonoMod.Utils.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net35/MonoMod.Utils.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "SemanticVersioning/2.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net35/SemanticVersioning.dll": {}
+        },
+        "runtime": {
+          "lib/net35/SemanticVersioning.dll": {}
+        }
+      },
+      "Unity.InputSystem/1.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/net35/Unity.InputSystem.dll": {}
+        },
+        "runtime": {
+          "lib/net35/_._": {}
+        }
+      },
+      "UnityEngine/5.6.1": {
+        "type": "package",
+        "compile": {
+          "lib/net35/UnityEngine.dll": {}
+        },
+        "runtime": {
+          "lib/net35/_._": {}
+        }
+      },
+      "UnityEngine.Modules/2019.4.24": {
+        "type": "package",
+        "compile": {
+          "lib/net35/UnityEngine.AIModule.dll": {},
+          "lib/net35/UnityEngine.ARModule.dll": {},
+          "lib/net35/UnityEngine.AccessibilityModule.dll": {},
+          "lib/net35/UnityEngine.AndroidJNIModule.dll": {},
+          "lib/net35/UnityEngine.AnimationModule.dll": {},
+          "lib/net35/UnityEngine.AssetBundleModule.dll": {},
+          "lib/net35/UnityEngine.AudioModule.dll": {},
+          "lib/net35/UnityEngine.ClothModule.dll": {},
+          "lib/net35/UnityEngine.ClusterInputModule.dll": {},
+          "lib/net35/UnityEngine.ClusterRendererModule.dll": {},
+          "lib/net35/UnityEngine.CoreModule.dll": {},
+          "lib/net35/UnityEngine.CrashReportingModule.dll": {},
+          "lib/net35/UnityEngine.DSPGraphModule.dll": {},
+          "lib/net35/UnityEngine.DirectorModule.dll": {},
+          "lib/net35/UnityEngine.GameCenterModule.dll": {},
+          "lib/net35/UnityEngine.GridModule.dll": {},
+          "lib/net35/UnityEngine.HotReloadModule.dll": {},
+          "lib/net35/UnityEngine.IMGUIModule.dll": {},
+          "lib/net35/UnityEngine.ImageConversionModule.dll": {},
+          "lib/net35/UnityEngine.InputLegacyModule.dll": {},
+          "lib/net35/UnityEngine.InputModule.dll": {},
+          "lib/net35/UnityEngine.JSONSerializeModule.dll": {},
+          "lib/net35/UnityEngine.LocalizationModule.dll": {},
+          "lib/net35/UnityEngine.ParticleSystemModule.dll": {},
+          "lib/net35/UnityEngine.PerformanceReportingModule.dll": {},
+          "lib/net35/UnityEngine.Physics2DModule.dll": {},
+          "lib/net35/UnityEngine.PhysicsModule.dll": {},
+          "lib/net35/UnityEngine.ProfilerModule.dll": {},
+          "lib/net35/UnityEngine.ScreenCaptureModule.dll": {},
+          "lib/net35/UnityEngine.SharedInternalsModule.dll": {},
+          "lib/net35/UnityEngine.SpriteMaskModule.dll": {},
+          "lib/net35/UnityEngine.SpriteShapeModule.dll": {},
+          "lib/net35/UnityEngine.StreamingModule.dll": {},
+          "lib/net35/UnityEngine.SubstanceModule.dll": {},
+          "lib/net35/UnityEngine.SubsystemsModule.dll": {},
+          "lib/net35/UnityEngine.TLSModule.dll": {},
+          "lib/net35/UnityEngine.TerrainModule.dll": {},
+          "lib/net35/UnityEngine.TerrainPhysicsModule.dll": {},
+          "lib/net35/UnityEngine.TextCoreModule.dll": {},
+          "lib/net35/UnityEngine.TextRenderingModule.dll": {},
+          "lib/net35/UnityEngine.TilemapModule.dll": {},
+          "lib/net35/UnityEngine.UIElementsModule.dll": {},
+          "lib/net35/UnityEngine.UIModule.dll": {},
+          "lib/net35/UnityEngine.UNETModule.dll": {},
+          "lib/net35/UnityEngine.UmbraModule.dll": {},
+          "lib/net35/UnityEngine.UnityAnalyticsModule.dll": {},
+          "lib/net35/UnityEngine.UnityConnectModule.dll": {},
+          "lib/net35/UnityEngine.UnityTestProtocolModule.dll": {},
+          "lib/net35/UnityEngine.UnityWebRequestAssetBundleModule.dll": {},
+          "lib/net35/UnityEngine.UnityWebRequestAudioModule.dll": {},
+          "lib/net35/UnityEngine.UnityWebRequestModule.dll": {},
+          "lib/net35/UnityEngine.UnityWebRequestTextureModule.dll": {},
+          "lib/net35/UnityEngine.UnityWebRequestWWWModule.dll": {},
+          "lib/net35/UnityEngine.VFXModule.dll": {},
+          "lib/net35/UnityEngine.VRModule.dll": {},
+          "lib/net35/UnityEngine.VehiclesModule.dll": {},
+          "lib/net35/UnityEngine.VideoModule.dll": {},
+          "lib/net35/UnityEngine.WindModule.dll": {},
+          "lib/net35/UnityEngine.XRModule.dll": {},
+          "lib/net35/UnityEngine.dll": {}
+        },
+        "runtime": {
+          "lib/net35/_._": {}
+        }
+      },
+      "Bridge Project/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v3.5",
+        "compile": {
+          "bin/placeholder/Bridge Project.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bridge Project.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AssetRipper.Primitives/3.1.3": {
+      "sha512": "djZbN/+EXmI+Oia9Pm0LyjZVCPLf60TPSL5rGb7mBEYM5F4CN3nPFXvl2yA5LanPZoHS1Yq7PghGUmkP7Pv9RQ==",
+      "type": "package",
+      "path": "assetripper.primitives/3.1.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "assetripper.primitives.3.1.3.nupkg.sha512",
+        "assetripper.primitives.nuspec",
+        "lib/net35/AssetRipper.Primitives.dll",
+        "lib/net35/AssetRipper.Primitives.xml",
+        "lib/net40/AssetRipper.Primitives.dll",
+        "lib/net40/AssetRipper.Primitives.xml",
+        "lib/net461/AssetRipper.Primitives.dll",
+        "lib/net461/AssetRipper.Primitives.xml",
+        "lib/net5.0/AssetRipper.Primitives.dll",
+        "lib/net5.0/AssetRipper.Primitives.xml",
+        "lib/net6.0/AssetRipper.Primitives.dll",
+        "lib/net6.0/AssetRipper.Primitives.xml",
+        "lib/net7.0/AssetRipper.Primitives.dll",
+        "lib/net7.0/AssetRipper.Primitives.xml",
+        "lib/net8.0/AssetRipper.Primitives.dll",
+        "lib/net8.0/AssetRipper.Primitives.xml",
+        "lib/netstandard2.0/AssetRipper.Primitives.dll",
+        "lib/netstandard2.0/AssetRipper.Primitives.xml"
+      ]
+    },
+    "BepInEx.Analyzers/1.0.8": {
+      "sha512": "xrfNmunsPhBx+vStTxLonq/aHkRrDH77c9tG/x3m5eejrKe5B0nf7cJPRRt6x330sGI0bLaPTtygdeHUgvI3wQ==",
+      "type": "package",
+      "path": "bepinex.analyzers/1.0.8",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        "analyzers/dotnet/cs/BepInEx.Analyzers.CodeFixes.dll",
+        "analyzers/dotnet/cs/BepInEx.Analyzers.dll",
+        "bepinex.analyzers.1.0.8.nupkg.sha512",
+        "bepinex.analyzers.nuspec",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "BepInEx.AssemblyPublicizer.MSBuild/0.4.0": {
+      "sha512": "kD9iPQnCcOAS68C7lyWxMoxMcxNgZdd4xdraRp8YHf5xCuHs5UzYjqHxER5/v81NEoGs9QEiz6/NdvFPTbDZqg==",
+      "type": "package",
+      "path": "bepinex.assemblypublicizer.msbuild/0.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bepinex.assemblypublicizer.msbuild.0.4.0.nupkg.sha512",
+        "bepinex.assemblypublicizer.msbuild.nuspec",
+        "build/BepInEx.AssemblyPublicizer.MSBuild.props",
+        "contentFiles/cs/any/IgnoresAccessChecksToAttribute.cs",
+        "lib/net472/AsmResolver.DotNet.dll",
+        "lib/net472/AsmResolver.PE.File.dll",
+        "lib/net472/AsmResolver.PE.dll",
+        "lib/net472/AsmResolver.dll",
+        "lib/net472/BepInEx.AssemblyPublicizer.MSBuild.dll",
+        "lib/net472/BepInEx.AssemblyPublicizer.dll",
+        "lib/netstandard2.1/AsmResolver.DotNet.dll",
+        "lib/netstandard2.1/AsmResolver.PE.File.dll",
+        "lib/netstandard2.1/AsmResolver.PE.dll",
+        "lib/netstandard2.1/AsmResolver.dll",
+        "lib/netstandard2.1/BepInEx.AssemblyPublicizer.MSBuild.dll",
+        "lib/netstandard2.1/BepInEx.AssemblyPublicizer.dll"
+      ]
+    },
+    "BepInEx.Core/6.0.0-be.752": {
+      "sha512": "0stCwKiXdNWt+BMc53YnkCKZm1oYNJET7LlyR6rDvGYiLzucPNsFzGT/DhhFX6ipuPytSpBW1JXMXOitGCnhEw==",
+      "type": "package",
+      "path": "bepinex.core/6.0.0-be.752",
+      "files": [
+        ".nupkg.metadata",
+        "bepinex.core.6.0.0-be.752.nupkg.sha512",
+        "bepinex.core.nuspec",
+        "lib/net35/BepInEx.Core.dll",
+        "lib/net35/BepInEx.Core.xml",
+        "lib/netstandard2.0/BepInEx.Core.dll",
+        "lib/netstandard2.0/BepInEx.Core.xml",
+        "logo.png"
+      ]
+    },
+    "BepInEx.Preloader.Core/6.0.0-be.752": {
+      "sha512": "BdPaITLigfMMhmLNGTND5uxR7LxD1t6F3mJenE2cAx57joRCjakYALmtEcjJtQ/Go/Z3IZbNNjaU13pAScHrTQ==",
+      "type": "package",
+      "path": "bepinex.preloader.core/6.0.0-be.752",
+      "files": [
+        ".nupkg.metadata",
+        "bepinex.preloader.core.6.0.0-be.752.nupkg.sha512",
+        "bepinex.preloader.core.nuspec",
+        "lib/net35/BepInEx.Preloader.Core.dll",
+        "lib/net35/BepInEx.Preloader.Core.xml",
+        "lib/netstandard2.0/BepInEx.Preloader.Core.dll",
+        "lib/netstandard2.0/BepInEx.Preloader.Core.xml",
+        "logo.png"
+      ]
+    },
+    "BepInEx.Unity.Common/6.0.0-be.752": {
+      "sha512": "V8UID0CQaXuD83BzXqnEd5l9ob5XEfDv9hesNpySJC+P3cQogUIZyQdRpijRzlvhU358yF0fxQzAJPv8NCNg4w==",
+      "type": "package",
+      "path": "bepinex.unity.common/6.0.0-be.752",
+      "files": [
+        ".nupkg.metadata",
+        "bepinex.unity.common.6.0.0-be.752.nupkg.sha512",
+        "bepinex.unity.common.nuspec",
+        "lib/net35/BepInEx.Unity.Common.dll",
+        "lib/net35/BepInEx.Unity.Common.xml",
+        "lib/netstandard2.0/BepInEx.Unity.Common.dll",
+        "lib/netstandard2.0/BepInEx.Unity.Common.xml",
+        "logo.png"
+      ]
+    },
+    "BepInEx.Unity.Mono/6.0.0-be.752": {
+      "sha512": "HmrYdXfi78ccdkZ2wgpWc5YpeEl6/6WOaFOQvnE2TSMHYuMuQiQhTS3O5T+T1570aFpgZ+3AlaQkJICYD2hJZQ==",
+      "type": "package",
+      "path": "bepinex.unity.mono/6.0.0-be.752",
+      "files": [
+        ".nupkg.metadata",
+        "bepinex.unity.mono.6.0.0-be.752.nupkg.sha512",
+        "bepinex.unity.mono.nuspec",
+        "lib/net35/BepInEx.Unity.Mono.dll",
+        "lib/net35/BepInEx.Unity.Mono.xml",
+        "lib/netstandard2.0/BepInEx.Unity.Mono.dll",
+        "lib/netstandard2.0/BepInEx.Unity.Mono.xml",
+        "logo.png"
+      ]
+    },
+    "BepInEx.Unity.Mono.Preloader/6.0.0-be.752": {
+      "sha512": "qfdtKJI5+toeASfqzYdo2Ss5rejVPrOLkAnPUJV5F5eay4kEamzD0mJbW1XAdHKQdI99nJyGipvhJOm5Qr+yCg==",
+      "type": "package",
+      "path": "bepinex.unity.mono.preloader/6.0.0-be.752",
+      "files": [
+        ".nupkg.metadata",
+        "bepinex.unity.mono.preloader.6.0.0-be.752.nupkg.sha512",
+        "bepinex.unity.mono.preloader.nuspec",
+        "lib/net35/BepInEx.Unity.Mono.Preloader.dll",
+        "lib/net35/BepInEx.Unity.Mono.Preloader.xml",
+        "lib/netstandard2.0/BepInEx.Unity.Mono.Preloader.dll",
+        "lib/netstandard2.0/BepInEx.Unity.Mono.Preloader.xml",
+        "logo.png"
+      ]
+    },
+    "Discord.Net/3.18.0": {
+      "sha512": "cvLvdgHNJrqbyCxIxY3GBmE8i9dTdyqFwlsqECDAOcNHIZ7J1ep7N0+wRvoQm9JQ23LcjIZOSZf1xxHcCA7lzg==",
+      "type": "package",
+      "path": "discord.net/3.18.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NUGET_README.md",
+        "PackageLogo.png",
+        "discord.net.3.18.0.nupkg.sha512",
+        "discord.net.nuspec"
+      ]
+    },
+    "HarmonyX/2.10.2": {
+      "sha512": "/5WwkxXX8mPsRuigQt957rJGx1f0dDQxk+bvk4yYITKFjXas9Em+O71zEP8X0ym8OFQQ2XH/2SxS4NC7vEC+Xg==",
+      "type": "package",
+      "path": "harmonyx/2.10.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "harmonyx.2.10.2.nupkg.sha512",
+        "harmonyx.nuspec",
+        "lib/net35/0Harmony.dll",
+        "lib/net35/0Harmony.xml",
+        "lib/net45/0Harmony.dll",
+        "lib/net45/0Harmony.xml",
+        "lib/netstandard2.0/0Harmony.dll",
+        "lib/netstandard2.0/0Harmony.xml",
+        "logo_mini.png"
+      ]
+    },
+    "Mono.Cecil/0.10.4": {
+      "sha512": "BHukPf7zfXu+akTcFEAWvU4x3hVMMIDC+ihGAl/+8OozrY0f/ajrpuaSUf2Q3Xvgsge5NryvOkjtyhV5TNXoSg==",
+      "type": "package",
+      "path": "mono.cecil/0.10.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/Mono.Cecil.Mdb.dll",
+        "lib/net35/Mono.Cecil.Pdb.dll",
+        "lib/net35/Mono.Cecil.Rocks.dll",
+        "lib/net35/Mono.Cecil.dll",
+        "lib/net40/Mono.Cecil.Mdb.dll",
+        "lib/net40/Mono.Cecil.Pdb.dll",
+        "lib/net40/Mono.Cecil.Rocks.dll",
+        "lib/net40/Mono.Cecil.dll",
+        "lib/netstandard1.3/Mono.Cecil.Mdb.dll",
+        "lib/netstandard1.3/Mono.Cecil.Pdb.dll",
+        "lib/netstandard1.3/Mono.Cecil.Rocks.dll",
+        "lib/netstandard1.3/Mono.Cecil.dll",
+        "mono.cecil.0.10.4.nupkg.sha512",
+        "mono.cecil.nuspec"
+      ]
+    },
+    "MonoMod.RuntimeDetour/22.7.31.1": {
+      "sha512": "nxVJTvQbWAujaogt5XX3eAy7d22t66Z88aWg9sirPLO9rR/6yNCHAyZpgxXrOsIobZVW0IEZPqNMOBhgke25/w==",
+      "type": "package",
+      "path": "monomod.runtimedetour/22.7.31.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/MonoMod.RuntimeDetour.dll",
+        "lib/net35/MonoMod.RuntimeDetour.xml",
+        "lib/net452/MonoMod.RuntimeDetour.dll",
+        "lib/net452/MonoMod.RuntimeDetour.xml",
+        "lib/net5.0/MonoMod.RuntimeDetour.dll",
+        "lib/net5.0/MonoMod.RuntimeDetour.xml",
+        "lib/netstandard2.0/MonoMod.RuntimeDetour.dll",
+        "lib/netstandard2.0/MonoMod.RuntimeDetour.xml",
+        "monomod.runtimedetour.22.7.31.1.nupkg.sha512",
+        "monomod.runtimedetour.nuspec"
+      ]
+    },
+    "MonoMod.Utils/22.7.31.1": {
+      "sha512": "nI0E1oadXS1iMbfwfCzYF08C1jRQR9cnnHv66a4BSPd4sGu2p6g4BmctCWsdAB6oGKkSJUhcfHfxcfTsDyB94Q==",
+      "type": "package",
+      "path": "monomod.utils/22.7.31.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/MonoMod.Utils.dll",
+        "lib/net35/MonoMod.Utils.xml",
+        "lib/net452/MonoMod.Utils.dll",
+        "lib/net452/MonoMod.Utils.xml",
+        "lib/net5.0/MonoMod.Utils.dll",
+        "lib/net5.0/MonoMod.Utils.xml",
+        "lib/netstandard2.0/MonoMod.Utils.dll",
+        "lib/netstandard2.0/MonoMod.Utils.xml",
+        "monomod.utils.22.7.31.1.nupkg.sha512",
+        "monomod.utils.nuspec"
+      ]
+    },
+    "SemanticVersioning/2.0.2": {
+      "sha512": "4EQgYdNZ92SyaO7YFk6olVnebF5V+jrHyMUjvPq89tLeMo8NSfgDF+6Zwq/lgh9j/0yfQp9Lkm0ZA0rUATCZFA==",
+      "type": "package",
+      "path": "semanticversioning/2.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/SemanticVersioning.dll",
+        "lib/net45/SemanticVersioning.dll",
+        "lib/netstandard1.1/SemanticVersioning.dll",
+        "lib/netstandard2.0/SemanticVersioning.dll",
+        "semanticversioning.2.0.2.nupkg.sha512",
+        "semanticversioning.nuspec"
+      ]
+    },
+    "Unity.InputSystem/1.5.0": {
+      "sha512": "wT/v12I32X+TlhPprHxQaw+LOkVkOPtdfVSJTurTtfN7V+d0cRaii2Nt5+oY8UhkKtHTExzMZB4dISjZQW70lA==",
+      "type": "package",
+      "path": "unity.inputsystem/1.5.0",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net35/Unity.InputSystem.dll",
+        "lib/netstandard2.0/Unity.InputSystem.dll",
+        "unity.inputsystem.1.5.0.nupkg.sha512",
+        "unity.inputsystem.nuspec"
+      ]
+    },
+    "UnityEngine/5.6.1": {
+      "sha512": "uAhM+pBtZH7CvGCBQyT9CaksT9M4fzTCIMetYjOEocuFiQGF38uGgS8q5xUd1HddaeXwDG9VrMARHGz5IXhQLw==",
+      "type": "package",
+      "path": "unityengine/5.6.1",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net35/UnityEngine.dll",
+        "lib/netstandard2.0/UnityEngine.dll",
+        "unityengine.5.6.1.nupkg.sha512",
+        "unityengine.nuspec"
+      ]
+    },
+    "UnityEngine.Modules/2019.4.24": {
+      "sha512": "Qrq0+YPa5oTk0ZUQEXB81IQJDNtKACTsFDq53BinxJEhSzH5B/6KE07G7BFUBwvj30lPMhX0OgAfTW7LCWPOow==",
+      "type": "package",
+      "path": "unityengine.modules/2019.4.24",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net35/UnityEngine.AIModule.dll",
+        "lib/net35/UnityEngine.ARModule.dll",
+        "lib/net35/UnityEngine.AccessibilityModule.dll",
+        "lib/net35/UnityEngine.AndroidJNIModule.dll",
+        "lib/net35/UnityEngine.AnimationModule.dll",
+        "lib/net35/UnityEngine.AssetBundleModule.dll",
+        "lib/net35/UnityEngine.AudioModule.dll",
+        "lib/net35/UnityEngine.ClothModule.dll",
+        "lib/net35/UnityEngine.ClusterInputModule.dll",
+        "lib/net35/UnityEngine.ClusterRendererModule.dll",
+        "lib/net35/UnityEngine.CoreModule.dll",
+        "lib/net35/UnityEngine.CrashReportingModule.dll",
+        "lib/net35/UnityEngine.DSPGraphModule.dll",
+        "lib/net35/UnityEngine.DirectorModule.dll",
+        "lib/net35/UnityEngine.GameCenterModule.dll",
+        "lib/net35/UnityEngine.GridModule.dll",
+        "lib/net35/UnityEngine.HotReloadModule.dll",
+        "lib/net35/UnityEngine.IMGUIModule.dll",
+        "lib/net35/UnityEngine.ImageConversionModule.dll",
+        "lib/net35/UnityEngine.InputLegacyModule.dll",
+        "lib/net35/UnityEngine.InputModule.dll",
+        "lib/net35/UnityEngine.JSONSerializeModule.dll",
+        "lib/net35/UnityEngine.LocalizationModule.dll",
+        "lib/net35/UnityEngine.ParticleSystemModule.dll",
+        "lib/net35/UnityEngine.PerformanceReportingModule.dll",
+        "lib/net35/UnityEngine.Physics2DModule.dll",
+        "lib/net35/UnityEngine.PhysicsModule.dll",
+        "lib/net35/UnityEngine.ProfilerModule.dll",
+        "lib/net35/UnityEngine.ScreenCaptureModule.dll",
+        "lib/net35/UnityEngine.SharedInternalsModule.dll",
+        "lib/net35/UnityEngine.SpriteMaskModule.dll",
+        "lib/net35/UnityEngine.SpriteShapeModule.dll",
+        "lib/net35/UnityEngine.StreamingModule.dll",
+        "lib/net35/UnityEngine.SubstanceModule.dll",
+        "lib/net35/UnityEngine.SubsystemsModule.dll",
+        "lib/net35/UnityEngine.TLSModule.dll",
+        "lib/net35/UnityEngine.TerrainModule.dll",
+        "lib/net35/UnityEngine.TerrainPhysicsModule.dll",
+        "lib/net35/UnityEngine.TextCoreModule.dll",
+        "lib/net35/UnityEngine.TextRenderingModule.dll",
+        "lib/net35/UnityEngine.TilemapModule.dll",
+        "lib/net35/UnityEngine.UIElementsModule.dll",
+        "lib/net35/UnityEngine.UIModule.dll",
+        "lib/net35/UnityEngine.UNETModule.dll",
+        "lib/net35/UnityEngine.UmbraModule.dll",
+        "lib/net35/UnityEngine.UnityAnalyticsModule.dll",
+        "lib/net35/UnityEngine.UnityConnectModule.dll",
+        "lib/net35/UnityEngine.UnityTestProtocolModule.dll",
+        "lib/net35/UnityEngine.UnityWebRequestAssetBundleModule.dll",
+        "lib/net35/UnityEngine.UnityWebRequestAudioModule.dll",
+        "lib/net35/UnityEngine.UnityWebRequestModule.dll",
+        "lib/net35/UnityEngine.UnityWebRequestTextureModule.dll",
+        "lib/net35/UnityEngine.UnityWebRequestWWWModule.dll",
+        "lib/net35/UnityEngine.VFXModule.dll",
+        "lib/net35/UnityEngine.VRModule.dll",
+        "lib/net35/UnityEngine.VehiclesModule.dll",
+        "lib/net35/UnityEngine.VideoModule.dll",
+        "lib/net35/UnityEngine.WindModule.dll",
+        "lib/net35/UnityEngine.XRModule.dll",
+        "lib/net35/UnityEngine.dll",
+        "lib/net45/UnityEngine.AIModule.dll",
+        "lib/net45/UnityEngine.ARModule.dll",
+        "lib/net45/UnityEngine.AccessibilityModule.dll",
+        "lib/net45/UnityEngine.AndroidJNIModule.dll",
+        "lib/net45/UnityEngine.AnimationModule.dll",
+        "lib/net45/UnityEngine.AssetBundleModule.dll",
+        "lib/net45/UnityEngine.AudioModule.dll",
+        "lib/net45/UnityEngine.ClothModule.dll",
+        "lib/net45/UnityEngine.ClusterInputModule.dll",
+        "lib/net45/UnityEngine.ClusterRendererModule.dll",
+        "lib/net45/UnityEngine.CoreModule.dll",
+        "lib/net45/UnityEngine.CrashReportingModule.dll",
+        "lib/net45/UnityEngine.DSPGraphModule.dll",
+        "lib/net45/UnityEngine.DirectorModule.dll",
+        "lib/net45/UnityEngine.GameCenterModule.dll",
+        "lib/net45/UnityEngine.GridModule.dll",
+        "lib/net45/UnityEngine.HotReloadModule.dll",
+        "lib/net45/UnityEngine.IMGUIModule.dll",
+        "lib/net45/UnityEngine.ImageConversionModule.dll",
+        "lib/net45/UnityEngine.InputLegacyModule.dll",
+        "lib/net45/UnityEngine.InputModule.dll",
+        "lib/net45/UnityEngine.JSONSerializeModule.dll",
+        "lib/net45/UnityEngine.LocalizationModule.dll",
+        "lib/net45/UnityEngine.ParticleSystemModule.dll",
+        "lib/net45/UnityEngine.PerformanceReportingModule.dll",
+        "lib/net45/UnityEngine.Physics2DModule.dll",
+        "lib/net45/UnityEngine.PhysicsModule.dll",
+        "lib/net45/UnityEngine.ProfilerModule.dll",
+        "lib/net45/UnityEngine.ScreenCaptureModule.dll",
+        "lib/net45/UnityEngine.SharedInternalsModule.dll",
+        "lib/net45/UnityEngine.SpriteMaskModule.dll",
+        "lib/net45/UnityEngine.SpriteShapeModule.dll",
+        "lib/net45/UnityEngine.StreamingModule.dll",
+        "lib/net45/UnityEngine.SubstanceModule.dll",
+        "lib/net45/UnityEngine.SubsystemsModule.dll",
+        "lib/net45/UnityEngine.TLSModule.dll",
+        "lib/net45/UnityEngine.TerrainModule.dll",
+        "lib/net45/UnityEngine.TerrainPhysicsModule.dll",
+        "lib/net45/UnityEngine.TextCoreModule.dll",
+        "lib/net45/UnityEngine.TextRenderingModule.dll",
+        "lib/net45/UnityEngine.TilemapModule.dll",
+        "lib/net45/UnityEngine.UIElementsModule.dll",
+        "lib/net45/UnityEngine.UIModule.dll",
+        "lib/net45/UnityEngine.UNETModule.dll",
+        "lib/net45/UnityEngine.UmbraModule.dll",
+        "lib/net45/UnityEngine.UnityAnalyticsModule.dll",
+        "lib/net45/UnityEngine.UnityConnectModule.dll",
+        "lib/net45/UnityEngine.UnityTestProtocolModule.dll",
+        "lib/net45/UnityEngine.UnityWebRequestAssetBundleModule.dll",
+        "lib/net45/UnityEngine.UnityWebRequestAudioModule.dll",
+        "lib/net45/UnityEngine.UnityWebRequestModule.dll",
+        "lib/net45/UnityEngine.UnityWebRequestTextureModule.dll",
+        "lib/net45/UnityEngine.UnityWebRequestWWWModule.dll",
+        "lib/net45/UnityEngine.VFXModule.dll",
+        "lib/net45/UnityEngine.VRModule.dll",
+        "lib/net45/UnityEngine.VehiclesModule.dll",
+        "lib/net45/UnityEngine.VideoModule.dll",
+        "lib/net45/UnityEngine.WindModule.dll",
+        "lib/net45/UnityEngine.XRModule.dll",
+        "lib/net45/UnityEngine.dll",
+        "lib/netstandard2.0/UnityEngine.AIModule.dll",
+        "lib/netstandard2.0/UnityEngine.ARModule.dll",
+        "lib/netstandard2.0/UnityEngine.AccessibilityModule.dll",
+        "lib/netstandard2.0/UnityEngine.AndroidJNIModule.dll",
+        "lib/netstandard2.0/UnityEngine.AnimationModule.dll",
+        "lib/netstandard2.0/UnityEngine.AssetBundleModule.dll",
+        "lib/netstandard2.0/UnityEngine.AudioModule.dll",
+        "lib/netstandard2.0/UnityEngine.ClothModule.dll",
+        "lib/netstandard2.0/UnityEngine.ClusterInputModule.dll",
+        "lib/netstandard2.0/UnityEngine.ClusterRendererModule.dll",
+        "lib/netstandard2.0/UnityEngine.CoreModule.dll",
+        "lib/netstandard2.0/UnityEngine.CrashReportingModule.dll",
+        "lib/netstandard2.0/UnityEngine.DSPGraphModule.dll",
+        "lib/netstandard2.0/UnityEngine.DirectorModule.dll",
+        "lib/netstandard2.0/UnityEngine.GameCenterModule.dll",
+        "lib/netstandard2.0/UnityEngine.GridModule.dll",
+        "lib/netstandard2.0/UnityEngine.HotReloadModule.dll",
+        "lib/netstandard2.0/UnityEngine.IMGUIModule.dll",
+        "lib/netstandard2.0/UnityEngine.ImageConversionModule.dll",
+        "lib/netstandard2.0/UnityEngine.InputLegacyModule.dll",
+        "lib/netstandard2.0/UnityEngine.InputModule.dll",
+        "lib/netstandard2.0/UnityEngine.JSONSerializeModule.dll",
+        "lib/netstandard2.0/UnityEngine.LocalizationModule.dll",
+        "lib/netstandard2.0/UnityEngine.ParticleSystemModule.dll",
+        "lib/netstandard2.0/UnityEngine.PerformanceReportingModule.dll",
+        "lib/netstandard2.0/UnityEngine.Physics2DModule.dll",
+        "lib/netstandard2.0/UnityEngine.PhysicsModule.dll",
+        "lib/netstandard2.0/UnityEngine.ProfilerModule.dll",
+        "lib/netstandard2.0/UnityEngine.ScreenCaptureModule.dll",
+        "lib/netstandard2.0/UnityEngine.SharedInternalsModule.dll",
+        "lib/netstandard2.0/UnityEngine.SpriteMaskModule.dll",
+        "lib/netstandard2.0/UnityEngine.SpriteShapeModule.dll",
+        "lib/netstandard2.0/UnityEngine.StreamingModule.dll",
+        "lib/netstandard2.0/UnityEngine.SubstanceModule.dll",
+        "lib/netstandard2.0/UnityEngine.SubsystemsModule.dll",
+        "lib/netstandard2.0/UnityEngine.TLSModule.dll",
+        "lib/netstandard2.0/UnityEngine.TerrainModule.dll",
+        "lib/netstandard2.0/UnityEngine.TerrainPhysicsModule.dll",
+        "lib/netstandard2.0/UnityEngine.TextCoreModule.dll",
+        "lib/netstandard2.0/UnityEngine.TextRenderingModule.dll",
+        "lib/netstandard2.0/UnityEngine.TilemapModule.dll",
+        "lib/netstandard2.0/UnityEngine.UIElementsModule.dll",
+        "lib/netstandard2.0/UnityEngine.UIModule.dll",
+        "lib/netstandard2.0/UnityEngine.UNETModule.dll",
+        "lib/netstandard2.0/UnityEngine.UmbraModule.dll",
+        "lib/netstandard2.0/UnityEngine.UnityAnalyticsModule.dll",
+        "lib/netstandard2.0/UnityEngine.UnityConnectModule.dll",
+        "lib/netstandard2.0/UnityEngine.UnityTestProtocolModule.dll",
+        "lib/netstandard2.0/UnityEngine.UnityWebRequestAssetBundleModule.dll",
+        "lib/netstandard2.0/UnityEngine.UnityWebRequestAudioModule.dll",
+        "lib/netstandard2.0/UnityEngine.UnityWebRequestModule.dll",
+        "lib/netstandard2.0/UnityEngine.UnityWebRequestTextureModule.dll",
+        "lib/netstandard2.0/UnityEngine.UnityWebRequestWWWModule.dll",
+        "lib/netstandard2.0/UnityEngine.VFXModule.dll",
+        "lib/netstandard2.0/UnityEngine.VRModule.dll",
+        "lib/netstandard2.0/UnityEngine.VehiclesModule.dll",
+        "lib/netstandard2.0/UnityEngine.VideoModule.dll",
+        "lib/netstandard2.0/UnityEngine.WindModule.dll",
+        "lib/netstandard2.0/UnityEngine.XRModule.dll",
+        "lib/netstandard2.0/UnityEngine.dll",
+        "unityengine.modules.2019.4.24.nupkg.sha512",
+        "unityengine.modules.nuspec"
+      ]
+    },
+    "Bridge Project/1.0.0": {
+      "type": "project",
+      "path": "../Bridge Project/Bridge Project.csproj",
+      "msbuildProject": "../Bridge Project/Bridge Project.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v3.5": [
+      "BepInEx.Analyzers >= 1.0.8",
+      "BepInEx.AssemblyPublicizer.MSBuild >= 0.4.0",
+      "BepInEx.Unity.Mono >= 6.0.0-be.752",
+      "BepInEx.Unity.Mono.Preloader >= 6.0.0-be.752",
+      "Bridge Project >= 1.0.0",
+      "Discord.Net >= 3.18.0",
+      "UnityEngine.Modules >= 2019.4.24"
+    ]
+  },
+  "packageFolders": {
+    "D:\\Nuget": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\Pony_Island_Challenge_Run\\Pony_Island_Challenge_Run.csproj",
+      "projectName": "Pony Island Challenge Runs",
+      "projectPath": "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\Pony_Island_Challenge_Run\\Pony_Island_Challenge_Run.csproj",
+      "packagesPath": "D:\\Nuget",
+      "outputPath": "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\Pony_Island_Challenge_Run\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\NuGet.Config",
+        "C:\\Users\\Thinc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netframework3.5.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.bepinex.dev/v3/index.json": {},
+        "https://nuget.windows10ce.com/nuget/v3/index.json": {}
+      },
+      "frameworks": {
+        "net35": {
+          "targetAlias": "netframework3.5.0",
+          "projectReferences": {
+            "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\Bridge Project\\Bridge Project.csproj": {
+              "projectPath": "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\Bridge Project\\Bridge Project.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net35": {
+        "targetAlias": "netframework3.5.0",
+        "dependencies": {
+          "BepInEx.Analyzers": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[1.0.8, )"
+          },
+          "BepInEx.AssemblyPublicizer.MSBuild": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[0.4.0, )"
+          },
+          "BepInEx.Unity.Mono": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[6.0.0-be.752, )"
+          },
+          "BepInEx.Unity.Mono.Preloader": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[6.0.0-be.752, )"
+          },
+          "Discord.Net": {
+            "target": "Package",
+            "version": "[3.18.0, )"
+          },
+          "UnityEngine.Modules": {
+            "include": "Compile",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[2019.4.24, )"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

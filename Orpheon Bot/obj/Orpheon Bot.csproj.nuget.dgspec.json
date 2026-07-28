@@ -1,0 +1,138 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\Orpheon Bot\\Orpheon Bot.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\Bridge Project\\Bridge Project.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\Bridge Project\\Bridge Project.csproj",
+        "projectName": "Bridge Project",
+        "projectPath": "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\Bridge Project\\Bridge Project.csproj",
+        "packagesPath": "D:\\Nuget",
+        "outputPath": "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\Bridge Project\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\NuGet.Config",
+          "C:\\Users\\Thinc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netframework3.5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.bepinex.dev/v3/index.json": {},
+          "https://nuget.windows10ce.com/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net35": {
+            "targetAlias": "netframework3.5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net35": {
+          "targetAlias": "netframework3.5.0",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\Orpheon Bot\\Orpheon Bot.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\Orpheon Bot\\Orpheon Bot.csproj",
+        "projectName": "Orpheon Bot Project",
+        "projectPath": "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\Orpheon Bot\\Orpheon Bot.csproj",
+        "packagesPath": "D:\\Nuget",
+        "outputPath": "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\Orpheon Bot\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\NuGet.Config",
+          "C:\\Users\\Thinc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.bepinex.dev/v3/index.json": {},
+          "https://nuget.windows10ce.com/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\Bridge Project\\Bridge Project.csproj": {
+                "projectPath": "C:\\Users\\Thinc\\RiderProjects\\Pony_Island_Challenge_Run\\Bridge Project\\Bridge Project.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Cecil.ANSI_Utils": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "DSharpPlus": {
+              "target": "Package",
+              "version": "[5.0.0-nightly-02566, )"
+            },
+            "DSharpPlus.CommandsNext": {
+              "target": "Package",
+              "version": "[5.0.0-nightly-02566, )"
+            },
+            "SixLabors.ImageSharp": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
