@@ -21,6 +21,7 @@
         <PackageReference Include="BepInEx.Unity.Mono.Preloader" Version="6.0.0-be.752">
             <PrivateAssets>all</PrivateAssets>
         </PackageReference>
+        <PackageReference Include="Cecil.Bridge" Version="1.0.0" />
         <PackageReference Include="Discord.Net" Version="3.18.0" />
         <PackageReference Include="UnityEngine.Modules" Version="2019.4.24" IncludeAssets="compile">
             <PrivateAssets>all</PrivateAssets>
@@ -46,12 +47,4 @@
     <ItemGroup>
       <Folder Include="Patching\" />
     </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\Bridge Project\Bridge Project.csproj" />
-    </ItemGroup>
-
-    <Target Name="PostBuild" AfterTargets="Build">
-        <Copy SourceFiles="$(TargetPath)" DestinationFolder="C:\Program Files (x86)\Steam\steamapps\common\Pony Island\BepInEx\plugins\Challenges" SkipUnchangedFiles="false" />
-    </Target>
 </Project>

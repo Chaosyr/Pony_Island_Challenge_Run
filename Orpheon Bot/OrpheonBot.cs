@@ -1,6 +1,6 @@
-﻿using Bridge_Project.Objects;
-using Bridge_Project.Utils.Pathing;
-using System.Reflection;
+﻿using System.Reflection;
+using Cecil_Bridge.Objects;
+using Orpheon_Bot.Util;
 
 namespace Orpheon_Bot;
 

@@ -1,7 +1,0 @@
-C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Bridge Project\bin\Debug\netframework3.5.0\Bridge Project.dll
-C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Bridge Project\bin\Debug\netframework3.5.0\Bridge Project.pdb
-C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Bridge Project\obj\Debug\netframework3.5.0\Bridge Project.csproj.AssemblyReference.cache
-C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Bridge Project\obj\Debug\netframework3.5.0\Bridge Project.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Bridge Project\obj\Debug\netframework3.5.0\Bridge Project.csproj.CoreCompileInputs.cache
-C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Bridge Project\obj\Debug\netframework3.5.0\Bridge Project.dll
-C:\Users\Thinc\RiderProjects\Pony_Island_Challenge_Run\Bridge Project\obj\Debug\netframework3.5.0\Bridge Project.pdb

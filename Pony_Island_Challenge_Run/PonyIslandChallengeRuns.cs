@@ -1,8 +1,7 @@
 ﻿using BepInEx;
 using BepInEx.Logging;
 using BepInEx.Unity.Mono;
-using Bridge_Project.Objects;
-using Bridge_Project.Utils.Pathing;
+using Cecil_Bridge.Objects;
 using PonyIslandChallengeRuns.Util;
 using System.IO;
 using System.Reflection;

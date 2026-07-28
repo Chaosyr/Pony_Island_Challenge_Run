@@ -15,6 +15,7 @@
         
     <ItemGroup>
         <PackageReference Include="Cecil.ANSI_Utils" Version="1.0.1" />
+        <PackageReference Include="Cecil.Bridge" Version="1.0.0" />
         <PackageReference Include="DSharpPlus" Version="5.0.0-nightly-02566" />
         <PackageReference Include="DSharpPlus.CommandsNext" Version="5.0.0-nightly-02566" />
         <PackageReference Include="SixLabors.ImageSharp" Version="3.1.12" />
@@ -25,10 +26,6 @@
     </ItemGroup>
     
     <ItemGroup>
-      <ProjectReference Include="..\Bridge Project\Bridge Project.csproj" />
-    </ItemGroup>
-    
-    <ItemGroup>
       <Folder Include="Util\Discord\" />
       <Folder Include="Util\Images\" />
       <Folder Include="Util\Logging\" />
@@ -36,8 +33,4 @@
       <Folder Include="Util\UI\" />
       <Folder Include="Util\Voting\" />
     </ItemGroup>
-    
-    <Target Name="PostBuild" AfterTargets="Build">
-        <Copy SourceFiles="$(TargetPath)" DestinationFolder="C:\Program Files (x86)\Steam\steamapps\common\Pony Island\Orpheon" SkipUnchangedFiles="false" />
-    </Target>
 </Project>
